@@ -220,8 +220,8 @@ class XApiClient:
 
         return str(data["media_id_string"])
 
-    def _poll_processing(self, media_id: str, processing: dict) -> None:
-        while True:
+    def _poll_processing(self, media_id: str, processing: dict, max_polls: int = 60) -> None:
+        for _ in range(max_polls):
             state = processing.get("state", "")
             if state == "succeeded":
                 return
@@ -238,6 +238,8 @@ class XApiClient:
             resp = self._http.get(UPLOAD_BASE, headers={"Authorization": auth}, params=params)
             data = self._handle(resp)
             processing = data.get("processing_info", {})
+
+        raise RuntimeError("Media processing timed out")
 
     # ---- tweets ----
 
