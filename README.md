@@ -12,7 +12,7 @@ Uses the same auth credentials as [x-mcp](https://github.com/INFATOSHI/x-mcp). I
 
 | Category | Commands | Examples | Status |
 |----------|----------|----------|--------|
-| **Post** | `tweet post`, `tweet quote`, `tweet delete` | `x-cli tweet post "hello world"` | OK |
+| **Post** | `tweet post`, `tweet quote`, `tweet delete` | `x-cli tweet post "hello world"`, `x-cli tweet post --media photo.jpg "check this out"` | OK |
 | **Read** | `tweet get`, `tweet search`, `user timeline`, `me mentions` | `x-cli tweet search "from:elonmusk"` | OK |
 | **Users** | `user get`, `user followers`, `user following` | `x-cli user get openai` | OK |
 | **Engage** | `retweet`, `me likes` | `x-cli me likes --max 20` | OK |
