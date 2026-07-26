@@ -1,6 +1,6 @@
 # x-cli
 
-![PyPI](https://img.shields.io/pypi/v/x-cli?style=flat-square) ![PyPI downloads](https://img.shields.io/pypi/dm/x-cli?style=flat-square&label=pypi%20downloads) [![Total downloads](https://static.pepy.tech/badge/x-cli)](https://pepy.tech/project/x-cli)
+> Fork of [Infatoshi/x-cli](https://github.com/Infatoshi/x-cli) with media upload support added.
 
 A CLI for X/Twitter that talks directly to the API v2. Post tweets, search, read timelines, manage bookmarks -- all from your terminal.
 

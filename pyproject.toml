@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 authors = [
+    { name = "Elliot Arledge (Infatoshi)" },
+]
+maintainers = [
     { name = "Andres Lee", email = "hola@andreslee.com" },
 ]
 dependencies = [
